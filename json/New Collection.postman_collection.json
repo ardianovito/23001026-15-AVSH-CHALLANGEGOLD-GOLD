@@ -1,0 +1,532 @@
+{
+	"info": {
+		"_postman_id": "995a8f71-4307-49a3-9830-7585e5853bc6",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22679784"
+	},
+	"item": [
+		{
+			"name": "/user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"name\": \"Skywrath Mage\",\r\n    \"email\": \"santo@predovic-douglas.com\",\r\n    \"password\": \"zWbNCekGNYRcruH\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://secondhand.binaracademy.org/users.json",
+					"protocol": "https",
+					"host": [
+						"secondhand",
+						"binaracademy",
+						"org"
+					],
+					"path": [
+						"users.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user/signin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"email\": \"macy@grant.info\",\r\n    \"password\": \"iFYAjOswbLNBjp\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://secondhand.binaracademy.org/users/sign_in.json",
+					"protocol": "https",
+					"host": [
+						"secondhand",
+						"binaracademy",
+						"org"
+					],
+					"path": [
+						"users",
+						"sign_in.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/categories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://secondhand.binaracademy.org/categories.json",
+					"protocol": "https",
+					"host": [
+						"secondhand",
+						"binaracademy",
+						"org"
+					],
+					"path": [
+						"categories.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/categories/id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://secondhand.binaracademy.org/categories/5.json",
+					"protocol": "https",
+					"host": [
+						"secondhand",
+						"binaracademy",
+						"org"
+					],
+					"path": [
+						"categories",
+						"5.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/offers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"offer\": {\r\n    \"price\": 1000,\r\n    \"to_id\": 1,\r\n    \"product_id\": 1\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://secondhand.binaracademy.org/offers.json",
+					"protocol": "https",
+					"host": [
+						"secondhand",
+						"binaracademy",
+						"org"
+					],
+					"path": [
+						"offers.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/users/89811/offers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://secondhand.binaracademy.org/users/89811/offers.json",
+					"protocol": "https",
+					"host": [
+						"secondhand",
+						"binaracademy",
+						"org"
+					],
+					"path": [
+						"users",
+						"89811",
+						"offers.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/offers/89811",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"offer\": {\r\n    \"status\": \"accepted\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://secondhand.binaracademy.org/offers/89811.json",
+					"protocol": "https",
+					"host": [
+						"secondhand",
+						"binaracademy",
+						"org"
+					],
+					"path": [
+						"offers",
+						"89811.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product[name]",
+							"value": "hp",
+							"type": "text"
+						},
+						{
+							"key": "product[price]",
+							"value": "55123211561",
+							"type": "text"
+						},
+						{
+							"key": "product[description]",
+							"value": "asdasd",
+							"type": "text"
+						},
+						{
+							"key": "product[status]",
+							"value": "published",
+							"type": "text"
+						},
+						{
+							"key": "product[category_id]",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "product[images][]",
+							"contentType": "image/jpeg",
+							"type": "file",
+							"src": "WhatsApp Image 2023-10-05 at 21.28.05.jpeg"
+						},
+						{
+							"key": "product[images][]",
+							"contentType": "image/png",
+							"type": "file",
+							"src": "Capture1.PNG"
+						},
+						{
+							"key": "product[images][]",
+							"contentType": "image/png",
+							"type": "file",
+							"src": "Capture1.PNG"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://secondhand.binaracademy.org/products.json",
+					"protocol": "https",
+					"host": [
+						"secondhand",
+						"binaracademy",
+						"org"
+					],
+					"path": [
+						"products.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/products.json?page=52&category_id=5&user_id=89811",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://secondhand.binaracademy.org/products.json?page=52&category_id=5&user_id=89811",
+					"protocol": "https",
+					"host": [
+						"secondhand",
+						"binaracademy",
+						"org"
+					],
+					"path": [
+						"products.json"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "52"
+						},
+						{
+							"key": "category_id",
+							"value": "5"
+						},
+						{
+							"key": "user_id",
+							"value": "89811"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/products/2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://secondhand.binaracademy.org/products/2.json",
+					"protocol": "https",
+					"host": [
+						"secondhand",
+						"binaracademy",
+						"org"
+					],
+					"path": [
+						"products",
+						"2.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products/2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product[name]",
+							"value": "Aether Lens",
+							"type": "text"
+						},
+						{
+							"key": "product[price]",
+							"value": "119534",
+							"type": "text"
+						},
+						{
+							"key": "product[description]",
+							"value": "Non suscipit deleniti. Blanditiis omnis nobis. Similique quia id.",
+							"type": "text"
+						},
+						{
+							"key": "product[status]",
+							"value": "published",
+							"type": "text"
+						},
+						{
+							"key": "product[category_id]",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "product[images][]",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "product[persisted_images][]",
+							"value": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb01DIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3a65eea97a596a39fdb3fa84812868b6e8feaf16,eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBb1FDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fb121120f09f458f8ba59bcd300750cbd64a719d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://secondhand.binaracademy.org/products/2.json",
+					"protocol": "https",
+					"host": [
+						"secondhand",
+						"binaracademy",
+						"org"
+					],
+					"path": [
+						"products",
+						"2.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/products/2.",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "https://secondhand.binaracademy.org/products/2.json",
+					"protocol": "https",
+					"host": [
+						"secondhand",
+						"binaracademy",
+						"org"
+					],
+					"path": [
+						"products",
+						"2.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/profiles",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user[name]",
+							"value": "Vito",
+							"type": "text"
+						},
+						{
+							"key": "user[phone_number]",
+							"value": "12312312",
+							"type": "text"
+						},
+						{
+							"key": "user[address]",
+							"value": "Suite ",
+							"type": "text"
+						},
+						{
+							"key": "user[city_id]",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "user[avatar]",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://secondhand.binaracademy.org/profiles.json",
+					"protocol": "https",
+					"host": [
+						"secondhand",
+						"binaracademy",
+						"org"
+					],
+					"path": [
+						"profiles.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/profiles",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://secondhand.binaracademy.org/profiles.json",
+					"protocol": "https",
+					"host": [
+						"secondhand",
+						"binaracademy",
+						"org"
+					],
+					"path": [
+						"profiles.json"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Hobi",
+      "url": "https://secondhand.binaracademy.org/categories/1"
+    },
+    {
+      "id": 2,
+      "name": "Kendaraan",
+      "url": "https://secondhand.binaracademy.org/categories/2"
+    },
+    {
+      "id": 3,
+      "name": "Baju",
+      "url": "https://secondhand.binaracademy.org/categories/3"
+    },
+    {
+      "id": 4,
+      "name": "Elektronik",
+      "url": "https://secondhand.binaracademy.org/categories/4"
+    },
+    {
+      "id": 5,
+      "name": "Kesehatan",
+      "url": "https://secondhand.binaracademy.org/categories/5"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "product": {
+    "id": 5,
+    "name": "Iphone 14",
+    "price": 18000000,
+    "description": "iPhone 14. Dengan sistem kamera ganda paling hebat di iPhone. Ambil foto yang memukau dalam pencahayaan rendah maupun terang. Deteksi Tabrakan,1 sebuah fitur keselamatan baru, memanggil bantuan saat Anda tak bisa.\r\n\r\nIsi Kotak :\r\n• iPhone dengan iOS 16.\r\n• Kabel USB-C ke Lightning.\r\n• Buku Manual dan dokumentasi lain.",
+    "category_id": 4,
+    "user_id": 11,
+    "created_at": "2023-03-03T08:43:30.789Z",
+    "updated_at": "2023-03-03T08:43:39.149Z",
+    "url": "https://secondhand.binaracademy.org/products/5.json",
+    "user": {
+      "id": 11,
+      "name": "Witch Doctor",
+      "email": "lygufuco@lyft.live",
+      "phone_number": "+773129055325",
+      "address": "2040 Schmidt Port, Lake Claire, WV 93541",
+      "city": {
+        "id": 1,
+        "name": "Solo"
+      },
+      "avatar": {
+        "filename": "unnamed.png",
+        "url": "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--041199729e86c99cbd68cfe917040c52d09df2c0/unnamed.png"
+      }
+    },
+    "images": [
+      {
+        "id": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBQdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9ea150a75a378f837a8f994173296c5e8de7e65d",
+        "filename": "images.jpeg",
+        "url": "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBQdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9ea150a75a378f837a8f994173296c5e8de7e65d/images.jpeg"
+      }
+    ]
+  }
+}

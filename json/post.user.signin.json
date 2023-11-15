@@ -1,0 +1,12 @@
+{
+  "user": {
+    "id": 89811,
+    "name": "Vito",
+    "email": "vito@mail.com",
+    "phone_number": null,
+    "address": null
+  },
+  "session": {
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4OTgxMSIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTcwMDA2NzA2OCwiZXhwIjoxNzAxMjc2NjY4LCJqdGkiOiJhMmFjNWY2Ni0wYjA1LTRiMzMtODJjMy0zN2IwZDZkNWJlMmYifQ.Wq0bTXBTBIqq2AZCKM6z7Qq8WxhURP53ywwv_ZE7ePA"
+  }
+}
