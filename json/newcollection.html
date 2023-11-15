@@ -1,0 +1,74 @@
+newman
+
+New Collection
+
+→ /user
+  POST https://secondhand.binaracademy.org/users.json [401 Unauthorized, 612B, 353ms]
+
+→ /user/signin
+  POST https://secondhand.binaracademy.org/users/sign_in.json [200 OK, 1.99kB, 304ms]
+
+→ /categories
+  GET https://secondhand.binaracademy.org/categories.json [200 OK, 1.06kB, 23ms]
+
+→ /categories/id
+  GET https://secondhand.binaracademy.org/categories/5.json [200 OK, 723B, 22ms]
+
+→ /offers
+  POST https://secondhand.binaracademy.org/offers.json [406 Not Acceptable, 371B, 47ms]
+
+→ /users/89811/offers
+  GET https://secondhand.binaracademy.org/users/89811/offers.json [200 OK, 1.23kB, 28ms]
+
+→ /offers/89811
+  PUT https://secondhand.binaracademy.org/offers/89811.json [406 Not Acceptable, 371B, 43ms]
+
+→ /products
+  ┌
+  │ 'Form param `product[images][]`, file load error: "Wha
+  │ tsApp Image 2023-10-05 at 21.28.05.jpeg", no such file
+  │ '
+  │ 'Form param `product[images][]`, file load error: "Cap
+  │ ture1.PNG", no such file'
+  │ 'Form param `product[images][]`, file load error: "Cap
+  │ ture1.PNG", no such file'
+  └
+  POST https://secondhand.binaracademy.org/products.json [201 Created, 1.84kB, 45ms]
+
+→ /products.json?page=52&category_id=5&user_id=89811
+  GET https://secondhand.binaracademy.org/products.json?page=52&category_id=5&user_id=89811 [200 OK, 11.05kB, 55ms]
+
+→ /products/2
+  GET https://secondhand.binaracademy.org/products/2.json [200 OK, 2.28kB, 34ms]
+
+→ products/2
+  PUT https://secondhand.binaracademy.org/products/2.json [403 Forbidden, 1.13kB, 31ms]
+
+→ /products/2.
+  DELETE https://secondhand.binaracademy.org/products/2.json [403 Forbidden, 1.13kB, 28ms]
+
+→ /profiles
+  PUT https://secondhand.binaracademy.org/profiles.json [500 Internal Server Error, 385B, 22ms]
+
+→ /profiles
+  GET https://secondhand.binaracademy.org/profiles.json [200 OK, 1.5kB, 26ms]
+
+[90m┌─────────────────────────[39m[90m┬────────────────────[39m[90m┬───────────────────┐[39m
+[90m│[39m                         [90m│[39m           executed [90m│[39m            failed [90m│[39m
+[90m├─────────────────────────[39m[90m┼────────────────────[39m[90m┼───────────────────┤[39m
+[90m│[39m              iterations [90m│[39m                  1 [90m│[39m                 0 [90m│[39m
+[90m├─────────────────────────[39m[90m┼────────────────────[39m[90m┼───────────────────┤[39m
+[90m│[39m                requests [90m│[39m                 14 [90m│[39m                 0 [90m│[39m
+[90m├─────────────────────────[39m[90m┼────────────────────[39m[90m┼───────────────────┤[39m
+[90m│[39m            test-scripts [90m│[39m                  0 [90m│[39m                 0 [90m│[39m
+[90m├─────────────────────────[39m[90m┼────────────────────[39m[90m┼───────────────────┤[39m
+[90m│[39m      prerequest-scripts [90m│[39m                  0 [90m│[39m                 0 [90m│[39m
+[90m├─────────────────────────[39m[90m┼────────────────────[39m[90m┼───────────────────┤[39m
+[90m│[39m              assertions [90m│[39m                  0 [90m│[39m                 0 [90m│[39m
+[90m├─────────────────────────┴────────────────────┴───────────────────┤[39m
+[90m│[39m total run duration: 2.1s                                         [90m│[39m
+[90m├──────────────────────────────────────────────────────────────────┤[39m
+[90m│[39m total data received: 13.56kB (approx)                            [90m│[39m
+[90m├──────────────────────────────────────────────────────────────────┤[39m
+[90m│[39m average response time: 75ms [min: 22ms, max: 353ms, s.d.: 104ms] [90m│[39m
+[90m└──────────────────────────────────────────────────────────────────┘[39m
